@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" type="text/css" href="./style.css"/>
+    <script src="./index.js"></script>
+</head>
+<body>
+  <div class="form">
+    <h2>Enter Your Details:</h2>
+     <form  id="userForm">
+       <label for="fullname" >Name:</label>
+       <input type="text" id="fullname" name="fullname" 
+       placeholder="Enter your name here" onkeyup="validName()" >
+       <p id="demo1"></p>
+       <br>
+       <label for="email">Email:</label>
+       <input type="email" id="email" name="email" 
+       placeholder="Enter your email here" onkeyup="validEmail()">
+       <p id="demo2"></p>
+       <br>
+       <label for="age">Age :</label>
+       <input type="text" id="age" name="age" 
+       placeholder="Enter your age here" onkeyup="validAge()">
+       <p id="demo3"></p>
+       <br>
+       
+       <label for="dob">Date of Birth:</label>
+       <input type="date" id="dob" name="dob" onkeyup="validDOB()" >
+       <p id="demo4"></p>
+       <br>
+      <button  type ="button" onclick="submitForm()">Submit</button>
+      <p id="demo5"></p>
+    </form>
+    <a href="display.html">View Submitted Data</a>
+
+    </div>
+</body>
+</html>
